@@ -1,0 +1,501 @@
+{
+  "comparisons": [
+    {
+      "central_90_intersection": {
+        "lower": 519.9000000000001,
+        "overlaps_or_touches": true,
+        "span_tokens": 23.14999999999918,
+        "upper": 543.0499999999993
+      },
+      "empirical_exact_overlap_pct": 10.800690711338918,
+      "higher_budget": 1024,
+      "higher_min_minus_lower_max_tokens": -756.0,
+      "histogram_overlap_pct": {
+        "128": 11.93804694336792,
+        "32": 11.538317289661208,
+        "64": 11.93804694336792
+      },
+      "lower_budget": 512,
+      "metric": "reasoning_tokens",
+      "problems": 500,
+      "range_intersection": {
+        "lower": 341.0,
+        "overlaps_or_touches": true,
+        "span_tokens": 756.0,
+        "upper": 1097.0
+      },
+      "same_question_higher_not_longer_pct": 0.35234375,
+      "same_question_range_overlap_pct": 13.4,
+      "same_question_ranges_overlap_or_touch": 67,
+      "shared_observed_integer_lengths": 317
+    },
+    {
+      "central_90_intersection": {
+        "lower": null,
+        "overlaps_or_touches": false,
+        "span_tokens": 0.0,
+        "upper": null
+      },
+      "empirical_exact_overlap_pct": 0.0,
+      "higher_budget": 2048,
+      "higher_min_minus_lower_max_tokens": -147.0,
+      "histogram_overlap_pct": {
+        "128": 0.075,
+        "32": 0.025,
+        "64": 0.0500140783381304
+      },
+      "lower_budget": 512,
+      "metric": "reasoning_tokens",
+      "problems": 500,
+      "range_intersection": {
+        "lower": 950.0,
+        "overlaps_or_touches": true,
+        "span_tokens": 147.0,
+        "upper": 1097.0
+      },
+      "same_question_higher_not_longer_pct": 0.0,
+      "same_question_range_overlap_pct": 0.0,
+      "same_question_ranges_overlap_or_touch": 0,
+      "shared_observed_integer_lengths": 0
+    },
+    {
+      "central_90_intersection": {
+        "lower": null,
+        "overlaps_or_touches": false,
+        "span_tokens": 0.0,
+        "upper": null
+      },
+      "empirical_exact_overlap_pct": 0.0,
+      "higher_budget": 3600,
+      "higher_min_minus_lower_max_tokens": 1581.0,
+      "histogram_overlap_pct": {
+        "128": 0.0,
+        "32": 0.0,
+        "64": 0.0
+      },
+      "lower_budget": 512,
+      "metric": "reasoning_tokens",
+      "problems": 500,
+      "range_intersection": {
+        "lower": null,
+        "overlaps_or_touches": false,
+        "span_tokens": 0.0,
+        "upper": null
+      },
+      "same_question_higher_not_longer_pct": 0.0,
+      "same_question_range_overlap_pct": 0.0,
+      "same_question_ranges_overlap_or_touch": 0,
+      "shared_observed_integer_lengths": 0
+    },
+    {
+      "central_90_intersection": {
+        "lower": null,
+        "overlaps_or_touches": false,
+        "span_tokens": 0.0,
+        "upper": null
+      },
+      "empirical_exact_overlap_pct": 0.2626329417444231,
+      "higher_budget": 2048,
+      "higher_min_minus_lower_max_tokens": -581.0,
+      "histogram_overlap_pct": {
+        "128": 0.3877612094829336,
+        "32": 0.3877612094829335,
+        "64": 0.3877612094829335
+      },
+      "lower_budget": 1024,
+      "metric": "reasoning_tokens",
+      "problems": 500,
+      "range_intersection": {
+        "lower": 950.0,
+        "overlaps_or_touches": true,
+        "span_tokens": 581.0,
+        "upper": 1531.0
+      },
+      "same_question_higher_not_longer_pct": 0.01953125,
+      "same_question_range_overlap_pct": 0.2,
+      "same_question_ranges_overlap_or_touch": 1,
+      "shared_observed_integer_lengths": 21
+    },
+    {
+      "central_90_intersection": {
+        "lower": null,
+        "overlaps_or_touches": false,
+        "span_tokens": 0.0,
+        "upper": null
+      },
+      "empirical_exact_overlap_pct": 0.0,
+      "higher_budget": 3600,
+      "higher_min_minus_lower_max_tokens": 1147.0,
+      "histogram_overlap_pct": {
+        "128": 0.0,
+        "32": 0.0,
+        "64": 0.0
+      },
+      "lower_budget": 1024,
+      "metric": "reasoning_tokens",
+      "problems": 500,
+      "range_intersection": {
+        "lower": null,
+        "overlaps_or_touches": false,
+        "span_tokens": 0.0,
+        "upper": null
+      },
+      "same_question_higher_not_longer_pct": 0.0,
+      "same_question_range_overlap_pct": 0.0,
+      "same_question_ranges_overlap_or_touch": 0,
+      "shared_observed_integer_lengths": 0
+    },
+    {
+      "central_90_intersection": {
+        "lower": null,
+        "overlaps_or_touches": false,
+        "span_tokens": 0.0,
+        "upper": null
+      },
+      "empirical_exact_overlap_pct": 0.0,
+      "higher_budget": 3600,
+      "higher_min_minus_lower_max_tokens": 8.0,
+      "histogram_overlap_pct": {
+        "128": 0.012514078338130395,
+        "32": 0.012514078338130395,
+        "64": 0.012514078338130395
+      },
+      "lower_budget": 2048,
+      "metric": "reasoning_tokens",
+      "problems": 500,
+      "range_intersection": {
+        "lower": null,
+        "overlaps_or_touches": false,
+        "span_tokens": 0.0,
+        "upper": null
+      },
+      "same_question_higher_not_longer_pct": 0.0,
+      "same_question_range_overlap_pct": 0.0,
+      "same_question_ranges_overlap_or_touch": 0,
+      "shared_observed_integer_lengths": 0
+    },
+    {
+      "central_90_intersection": {
+        "lower": null,
+        "overlaps_or_touches": false,
+        "span_tokens": 0.0,
+        "upper": null
+      },
+      "empirical_exact_overlap_pct": 4.2125,
+      "higher_budget": 1024,
+      "higher_min_minus_lower_max_tokens": -753.0,
+      "histogram_overlap_pct": {
+        "128": 4.750000000000001,
+        "32": 4.75,
+        "64": 4.75
+      },
+      "lower_budget": 512,
+      "metric": "total_output_tokens",
+      "problems": 500,
+      "range_intersection": {
+        "lower": 358.0,
+        "overlaps_or_touches": true,
+        "span_tokens": 753.0,
+        "upper": 1111.0
+      },
+      "same_question_higher_not_longer_pct": 0.1015625,
+      "same_question_range_overlap_pct": 3.0,
+      "same_question_ranges_overlap_or_touch": 15,
+      "shared_observed_integer_lengths": 203
+    },
+    {
+      "central_90_intersection": {
+        "lower": null,
+        "overlaps_or_touches": false,
+        "span_tokens": 0.0,
+        "upper": null
+      },
+      "empirical_exact_overlap_pct": 0.0,
+      "higher_budget": 2048,
+      "higher_min_minus_lower_max_tokens": 11.0,
+      "histogram_overlap_pct": {
+        "128": 0.0375,
+        "32": 0.0,
+        "64": 0.025
+      },
+      "lower_budget": 512,
+      "metric": "total_output_tokens",
+      "problems": 500,
+      "range_intersection": {
+        "lower": null,
+        "overlaps_or_touches": false,
+        "span_tokens": 0.0,
+        "upper": null
+      },
+      "same_question_higher_not_longer_pct": 0.0,
+      "same_question_range_overlap_pct": 0.0,
+      "same_question_ranges_overlap_or_touch": 0,
+      "shared_observed_integer_lengths": 0
+    },
+    {
+      "central_90_intersection": {
+        "lower": null,
+        "overlaps_or_touches": false,
+        "span_tokens": 0.0,
+        "upper": null
+      },
+      "empirical_exact_overlap_pct": 0.0,
+      "higher_budget": 3600,
+      "higher_min_minus_lower_max_tokens": 1736.0,
+      "histogram_overlap_pct": {
+        "128": 0.0,
+        "32": 0.0,
+        "64": 0.0
+      },
+      "lower_budget": 512,
+      "metric": "total_output_tokens",
+      "problems": 500,
+      "range_intersection": {
+        "lower": null,
+        "overlaps_or_touches": false,
+        "span_tokens": 0.0,
+        "upper": null
+      },
+      "same_question_higher_not_longer_pct": 0.0,
+      "same_question_range_overlap_pct": 0.0,
+      "same_question_ranges_overlap_or_touch": 0,
+      "shared_observed_integer_lengths": 0
+    },
+    {
+      "central_90_intersection": {
+        "lower": null,
+        "overlaps_or_touches": false,
+        "span_tokens": 0.0,
+        "upper": null
+      },
+      "empirical_exact_overlap_pct": 0.22500000000000003,
+      "higher_budget": 2048,
+      "higher_min_minus_lower_max_tokens": -4878.0,
+      "histogram_overlap_pct": {
+        "128": 0.4875000000000001,
+        "32": 0.4875,
+        "64": 0.4875
+      },
+      "lower_budget": 1024,
+      "metric": "total_output_tokens",
+      "problems": 500,
+      "range_intersection": {
+        "lower": 1122.0,
+        "overlaps_or_touches": true,
+        "span_tokens": 4878.0,
+        "upper": 6000.0
+      },
+      "same_question_higher_not_longer_pct": 0.02578125,
+      "same_question_range_overlap_pct": 0.4,
+      "same_question_ranges_overlap_or_touch": 2,
+      "shared_observed_integer_lengths": 18
+    },
+    {
+      "central_90_intersection": {
+        "lower": null,
+        "overlaps_or_touches": false,
+        "span_tokens": 0.0,
+        "upper": null
+      },
+      "empirical_exact_overlap_pct": 0.0125,
+      "higher_budget": 3600,
+      "higher_min_minus_lower_max_tokens": -3153.0,
+      "histogram_overlap_pct": {
+        "128": 0.0125,
+        "32": 0.0125,
+        "64": 0.0125
+      },
+      "lower_budget": 1024,
+      "metric": "total_output_tokens",
+      "problems": 500,
+      "range_intersection": {
+        "lower": 2847.0,
+        "overlaps_or_touches": true,
+        "span_tokens": 3153.0,
+        "upper": 6000.0
+      },
+      "same_question_higher_not_longer_pct": 0.0125,
+      "same_question_range_overlap_pct": 0.2,
+      "same_question_ranges_overlap_or_touch": 1,
+      "shared_observed_integer_lengths": 1
+    },
+    {
+      "central_90_intersection": {
+        "lower": null,
+        "overlaps_or_touches": false,
+        "span_tokens": 0.0,
+        "upper": null
+      },
+      "empirical_exact_overlap_pct": 0.11249999999999999,
+      "higher_budget": 3600,
+      "higher_min_minus_lower_max_tokens": -3153.0,
+      "histogram_overlap_pct": {
+        "128": 0.12499999999999999,
+        "32": 0.11249999999999999,
+        "64": 0.11249999999999999
+      },
+      "lower_budget": 2048,
+      "metric": "total_output_tokens",
+      "problems": 500,
+      "range_intersection": {
+        "lower": 2847.0,
+        "overlaps_or_touches": true,
+        "span_tokens": 3153.0,
+        "upper": 6000.0
+      },
+      "same_question_higher_not_longer_pct": 0.1125,
+      "same_question_range_overlap_pct": 0.4,
+      "same_question_ranges_overlap_or_touch": 2,
+      "shared_observed_integer_lengths": 1
+    }
+  ],
+  "metadata": {
+    "builder_sha256": "60e42e199a0831d64384a5acdec27d1510c3efa34b4f96fa8e9d3a29405acda7",
+    "claims": "Post-hoc descriptive study; overlap alone does not demonstrate novelty, accuracy gain, or a causal effect of length",
+    "closed_selection": "Reasoning summaries exclude missing boundaries; absence of observed overlap is not a guarantee for excluded, future, or out-of-distribution generations",
+    "conditional_comparison": "500 equally weighted question-specific cross-repetition comparisons; sample indices are not matched seeds across budgets",
+    "exact_overlap": "Sum of minimum empirical point-mass probabilities at shared observed integer lengths; finite-sample description, not population support",
+    "execution": "CPU-only; no inference, re-tokenization, or regrading",
+    "histogram_overlap": "Sum of minimum normalized counts on common zero-origin bins. Width sensitivity is reported at 32,64,128 tokens; binning may create apparent overlap of distinct lengths",
+    "input_sha256": "f9d3d77c7157f294e91c8c632fc00e3ee5743010b5a35d6d7058a4325284137c",
+    "matplotlib": "3.9.2",
+    "numpy": "2.1.3",
+    "problem_count": 500,
+    "python": "3.11.4",
+    "quantiles": "NumPy linear interpolation; central 90% is p05-p95, not a confidence interval",
+    "reasoning_boundary": "Original-ID prefix before the unique closing marker; unavailable boundaries remain null",
+    "record_count": 32000,
+    "study_description": "Empirical audit of generation budgets and accuracy",
+    "total_boundary": "All generated token IDs; includes caps and the final answer"
+  },
+  "summaries": [
+    {
+      "budget": 512,
+      "cap_hits_all_outputs": 0,
+      "input_n": 8000,
+      "maximum": 1097.0,
+      "mean": 356.0565,
+      "median": 341.0,
+      "metric": "reasoning_tokens",
+      "minimum": 135.0,
+      "n": 8000,
+      "p05": 214.0,
+      "p25": 283.0,
+      "p75": 415.0,
+      "p95": 543.0499999999993,
+      "unavailable": 0
+    },
+    {
+      "budget": 1024,
+      "cap_hits_all_outputs": 1,
+      "input_n": 8000,
+      "maximum": 1531.0,
+      "mean": 864.9213651706464,
+      "median": 900.0,
+      "metric": "reasoning_tokens",
+      "minimum": 341.0,
+      "n": 7999,
+      "p05": 519.9000000000001,
+      "p25": 729.0,
+      "p75": 1002.0,
+      "p95": 1126.0,
+      "unavailable": 1
+    },
+    {
+      "budget": 2048,
+      "cap_hits_all_outputs": 9,
+      "input_n": 8000,
+      "maximum": 2670.0,
+      "mean": 1773.3684144662745,
+      "median": 1786.0,
+      "metric": "reasoning_tokens",
+      "minimum": 950.0,
+      "n": 7991,
+      "p05": 1595.0,
+      "p25": 1685.0,
+      "p75": 1849.0,
+      "p95": 1951.5,
+      "unavailable": 9
+    },
+    {
+      "budget": 3600,
+      "cap_hits_all_outputs": 30,
+      "input_n": 8000,
+      "maximum": 5805.0,
+      "mean": 3259.2708568561034,
+      "median": 3244.0,
+      "metric": "reasoning_tokens",
+      "minimum": 2678.0,
+      "n": 7971,
+      "p05": 3101.5,
+      "p25": 3196.0,
+      "p75": 3318.0,
+      "p95": 3440.0,
+      "unavailable": 29
+    },
+    {
+      "budget": 512,
+      "cap_hits_all_outputs": 0,
+      "input_n": 8000,
+      "maximum": 1111.0,
+      "mean": 400.0515,
+      "median": 390.0,
+      "metric": "total_output_tokens",
+      "minimum": 176.0,
+      "n": 8000,
+      "p05": 251.0,
+      "p25": 327.0,
+      "p75": 461.0,
+      "p95": 581.0,
+      "unavailable": 0
+    },
+    {
+      "budget": 1024,
+      "cap_hits_all_outputs": 1,
+      "input_n": 8000,
+      "maximum": 6000.0,
+      "mean": 1038.345125,
+      "median": 1057.0,
+      "metric": "total_output_tokens",
+      "minimum": 358.0,
+      "n": 8000,
+      "p05": 685.0,
+      "p25": 882.0,
+      "p75": 1189.0,
+      "p95": 1360.0,
+      "unavailable": 0
+    },
+    {
+      "budget": 2048,
+      "cap_hits_all_outputs": 9,
+      "input_n": 8000,
+      "maximum": 6000.0,
+      "mean": 2039.718625,
+      "median": 2036.0,
+      "metric": "total_output_tokens",
+      "minimum": 1122.0,
+      "n": 8000,
+      "p05": 1820.0,
+      "p25": 1948.0,
+      "p75": 2118.25,
+      "p95": 2266.0,
+      "unavailable": 0
+    },
+    {
+      "budget": 3600,
+      "cap_hits_all_outputs": 30,
+      "input_n": 8000,
+      "maximum": 6000.0,
+      "mean": 3537.39175,
+      "median": 3518.0,
+      "metric": "total_output_tokens",
+      "minimum": 2847.0,
+      "n": 8000,
+      "p05": 3327.0,
+      "p25": 3438.0,
+      "p75": 3611.0,
+      "p95": 3770.0,
+      "unavailable": 0
+    }
+  ]
+}

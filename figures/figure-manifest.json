@@ -1,0 +1,17 @@
+{
+  "analysis_sha256": "37c9848606ba10d8d32bacd46bf3ce1e5c82d80be80a1056bb5beafeca8a6748",
+  "builder_sha256": "6f19013738fdc6320483a98f0b62c4461f88eff15c1bd2ed6e7516ddd2475f0c",
+  "files": {
+    "figure-1-budget-accuracy-and-length.pdf": "61873c718b9636d3dea07b655b37ad58c6701b96db3c632a21a4ee3ff3c8f48a",
+    "figure-1-budget-accuracy-and-length.png": "2799fb9575a65aab0e6fc7befe9dbe24930344e13dd1e4834b90b8257b349cb5",
+    "figure-2-adherence-and-boundary-sensitivity.pdf": "57375287decb1ebb4cf7ec070ff9628a3dff64d3eed7c3897f0024ea556bcb95",
+    "figure-2-adherence-and-boundary-sensitivity.png": "21533c74f500e3d5ecbdfc7b0b450b299a4f8cf6924667dc7beb9f5a23e0aca6",
+    "figure-3-accuracy-by-difficulty.pdf": "24c6eddfe41c275fb8960d1a55eb94b25594c9678120d3a0b161fa9d7fcbb75b",
+    "figure-3-accuracy-by-difficulty.png": "474d0ef623612e4462441ab6607654e90b271cbedd35beb29e479fdb0d5e0437",
+    "figure-captions.json": "eab44a879f030341c73470a7e2b3d1174b78fcc91e76981dfd473532edf59d15"
+  },
+  "formats": {
+    "pdf": "scientific vector figures with embedded TrueType fonts",
+    "png": "300 dpi"
+  }
+}

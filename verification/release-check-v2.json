@@ -1,0 +1,23 @@
+{
+  "execution": "Independent local copy; full CPU wrapper; Python3.11.4 NumPy2.1.3 Matplotlib3.9.2",
+  "main_csv_exact": 6,
+  "main_inputs_results_figures_unchanged_from_v1": true,
+  "main_scientific_json_match": true,
+  "pending": [
+    "Author names",
+    "Code/data licenses and third-party attribution review",
+    "Public repository/archive links"
+  ],
+  "pilot_json_and_csv_byte_exact": true,
+  "pilot_per_problem_rows": 180,
+  "pilot_records": 720,
+  "pilot_summary_rows": 36,
+  "source_integrity": "Original ZIP/member hashes retained; duplicate v4 report excluded; exact original pilot Python files preserved",
+  "status": "passed",
+  "tests": {
+    "overlap": 4,
+    "release_and_pilots": 15,
+    "total_passed": 19
+  },
+  "version": "0.2.0-rc1"
+}

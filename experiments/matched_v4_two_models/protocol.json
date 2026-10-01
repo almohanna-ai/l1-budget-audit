@@ -1,0 +1,188 @@
+{
+  "schema_version": "4.0",
+  "experiment_id": "l1-two-models-n5-c5-s4-format-calibration-v4",
+  "dataset": {
+    "id": "HuggingFaceH4/MATH-500",
+    "split": "test",
+    "revision": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be",
+    "selection": "Fixed development subset used only for prompt-format calibration; not held out"
+  },
+  "samples": 4,
+  "batch_size": 4,
+  "max_new_tokens": 6000,
+  "max_model_len": 8192,
+  "requested_budget": null,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "conditions": [
+    {
+      "id": "cot-8shot-v2",
+      "demo_style": "cot",
+      "instruction": "Reason through the problem step by step using clear explanatory sentences before giving the answer.",
+      "budget": null,
+      "group": "format"
+    },
+    {
+      "id": "concise-8shot-v2",
+      "demo_style": "concise",
+      "instruction": "Use no more than six necessary reasoning steps. Write one short step per line and omit all optional explanation.",
+      "budget": null,
+      "group": "format"
+    },
+    {
+      "id": "cod-8shot-v2",
+      "demo_style": "cod",
+      "instruction": "Use a short draft. Write one atomic reasoning step per line, use at most five words per line, prefer equations and standard abbreviations, and do not write explanatory paragraphs.",
+      "budget": null,
+      "group": "format"
+    },
+    {
+      "id": "sot-8shot-v2",
+      "demo_style": "sot",
+      "instruction": "Use exactly this compact symbolic-sketch structure: one GIVEN: line, one TARGET: line, one or more numbered step lines beginning S1:, S2:, and so on as needed, then one CHECK: line. Put one compact relation or operation on each line and do not write explanatory paragraphs.",
+      "budget": null,
+      "group": "format"
+    },
+    {
+      "id": "symbolic-8shot-v2",
+      "demo_style": "symbolic",
+      "instruction": "Write the reasoning only with mathematical symbols, numbers, variables, equations, standard operators, and LaTeX commands. Do not use explanatory prose. The final answer may use the normal answer format.",
+      "budget": null,
+      "group": "format"
+    }
+  ],
+  "prompt_provenance": {
+    "status": "Controlled format-calibration adaptations, not exact paper replications. All conditions use eight authored examples with matched questions, mathematical content, order, and final answers; only reasoning presentation changes.",
+    "cod": "https://github.com/sileix/chain-of-draft",
+    "sot": "https://arxiv.org/html/2503.05179v4",
+    "symbolic": "Operational replacement for the failed only-numbers condition"
+  },
+  "calibration_decision_rule": {
+    "minimum_human_compliance_pct_per_model": 80,
+    "status": "Predeclared screening rule for entry into a later held-out study; automatic proxies are not final verdicts"
+  },
+  "projection_schema_version": "1.0",
+  "protocol_sha256": "1d7696a85f6da5bc23335b101f22515b469f6a5ffcfeddfe95f5d6c449b3179a",
+  "problem_metadata": [
+    {
+      "difficulty": "1",
+      "problem_id": "test/prealgebra/307.json",
+      "source_index": 86,
+      "subject": "Prealgebra"
+    },
+    {
+      "difficulty": "2",
+      "problem_id": "test/geometry/254.json",
+      "source_index": 243,
+      "subject": "Geometry"
+    },
+    {
+      "difficulty": "3",
+      "problem_id": "test/counting_and_probability/71.json",
+      "source_index": 226,
+      "subject": "Counting & Probability"
+    },
+    {
+      "difficulty": "4",
+      "problem_id": "test/number_theory/533.json",
+      "source_index": 272,
+      "subject": "Number Theory"
+    },
+    {
+      "difficulty": "5",
+      "problem_id": "test/algebra/2043.json",
+      "source_index": 435,
+      "subject": "Algebra"
+    }
+  ],
+  "models": {
+    "small": {
+      "model_id": "l3lab/L1-Qwen-1.5B-Exact",
+      "model_revision": "b1fa57f192f0b14bd033d0085faaa80cdc39694b",
+      "requested_revision": "b1fa57f192f0b14bd033d0085faaa80cdc39694b",
+      "backend_version": "0.28.0",
+      "code_sha256": "f98f6709782061e29dbbc01e1a30382f6f031d99df5a294c108cddf6e7ac4158",
+      "chat_template": "{% if not add_generation_prompt is defined %}{% set add_generation_prompt = false %}{% endif %}{% set ns = namespace(is_first=false, is_tool=false, is_output_first=true, system_prompt='') %}{%- for message in messages %}{%- if message['role'] == 'system' %}{% set ns.system_prompt = message['content'] %}{%- endif %}{%- endfor %}{{bos_token}}{{ns.system_prompt}}{%- for message in messages %}{%- if message['role'] == 'user' %}{%- set ns.is_tool = false -%}{{'<｜User｜>' + message['content']}}{%- endif %}{%- if message['role'] == 'assistant' and message['content'] is none %}{%- set ns.is_tool = false -%}{%- for tool in message['tool_calls']%}{%- if not ns.is_first %}{{'<｜Assistant｜><｜tool▁calls▁begin｜><｜tool▁call▁begin｜>' + tool['type'] + '<｜tool▁sep｜>' + tool['function']['name'] + '\\n' + '```json' + '\\n' + tool['function']['arguments'] + '\\n' + '```' + '<｜tool▁call▁end｜>'}}{%- set ns.is_first = true -%}{%- else %}{{'\\n' + '<｜tool▁call▁begin｜>' + tool['type'] + '<｜tool▁sep｜>' + tool['function']['name'] + '\\n' + '```json' + '\\n' + tool['function']['arguments'] + '\\n' + '```' + '<｜tool▁call▁end｜>'}}{{'<｜tool▁calls▁end｜><｜end▁of▁sentence｜>'}}{%- endif %}{%- endfor %}{%- endif %}{%- if message['role'] == 'assistant' and message['content'] is not none %}{%- if ns.is_tool %}{{'<｜tool▁outputs▁end｜>' + message['content'] + '<｜end▁of▁sentence｜>'}}{%- set ns.is_tool = false -%}{%- else %}{% set content = message['content'] %}{% if '</think>' in content %}{% set content = content.split('</think>')[-1] %}{% endif %}{{'<｜Assistant｜>' + content + '<｜end▁of▁sentence｜>'}}{%- endif %}{%- endif %}{%- if message['role'] == 'tool' %}{%- set ns.is_tool = true -%}{%- if ns.is_output_first %}{{'<｜tool▁outputs▁begin｜><｜tool▁output▁begin｜>' + message['content'] + '<｜tool▁output▁end｜>'}}{%- set ns.is_output_first = false %}{%- else %}{{'\\n<｜tool▁output▁begin｜>' + message['content'] + '<｜tool▁output▁end｜>'}}{%- endif %}{%- endif %}{%- endfor -%}{% if ns.is_tool %}{{'<｜tool▁outputs▁end｜>'}}{% endif %}{% if add_generation_prompt and not ns.is_tool %}{{'<｜Assistant｜>'}}{% endif %}",
+      "plan_sha256": "e73b04425dab4ff0c11224216d4bcc55de4c0bff3ee15363338328ace0eea46d",
+      "source_complete": true
+    },
+    "large": {
+      "model_id": "l3lab/L1-Qwen-7B-Exact",
+      "model_revision": "faddca9f863ea15295cd6600d64593f26b8c5086",
+      "requested_revision": "faddca9",
+      "backend_version": "0.28.0",
+      "code_sha256": "f98f6709782061e29dbbc01e1a30382f6f031d99df5a294c108cddf6e7ac4158",
+      "chat_template": "{% if not add_generation_prompt is defined %}{% set add_generation_prompt = false %}{% endif %}{% set ns = namespace(is_first=false, is_tool=false, is_output_first=true, system_prompt='') %}{%- for message in messages %}{%- if message['role'] == 'system' %}{% set ns.system_prompt = message['content'] %}{%- endif %}{%- endfor %}{{bos_token}}{{ns.system_prompt}}{%- for message in messages %}{%- if message['role'] == 'user' %}{%- set ns.is_tool = false -%}{{'<｜User｜>' + message['content']}}{%- endif %}{%- if message['role'] == 'assistant' and message['content'] is none %}{%- set ns.is_tool = false -%}{%- for tool in message['tool_calls']%}{%- if not ns.is_first %}{{'<｜Assistant｜><｜tool▁calls▁begin｜><｜tool▁call▁begin｜>' + tool['type'] + '<｜tool▁sep｜>' + tool['function']['name'] + '\\n' + '```json' + '\\n' + tool['function']['arguments'] + '\\n' + '```' + '<｜tool▁call▁end｜>'}}{%- set ns.is_first = true -%}{%- else %}{{'\\n' + '<｜tool▁call▁begin｜>' + tool['type'] + '<｜tool▁sep｜>' + tool['function']['name'] + '\\n' + '```json' + '\\n' + tool['function']['arguments'] + '\\n' + '```' + '<｜tool▁call▁end｜>'}}{{'<｜tool▁calls▁end｜><｜end▁of▁sentence｜>'}}{%- endif %}{%- endfor %}{%- endif %}{%- if message['role'] == 'assistant' and message['content'] is not none %}{%- if ns.is_tool %}{{'<｜tool▁outputs▁end｜>' + message['content'] + '<｜end▁of▁sentence｜>'}}{%- set ns.is_tool = false -%}{%- else %}{% set content = message['content'] %}{% if '</think>' in content %}{% set content = content.split('</think>')[-1] %}{% endif %}{{'<｜Assistant｜>' + content + '<｜end▁of▁sentence｜>'}}{%- endif %}{%- endif %}{%- if message['role'] == 'tool' %}{%- set ns.is_tool = true -%}{%- if ns.is_output_first %}{{'<｜tool▁outputs▁begin｜><｜tool▁output▁begin｜>' + message['content'] + '<｜tool▁output▁end｜>'}}{%- set ns.is_output_first = false %}{%- else %}{{'\\n<｜tool▁output▁begin｜>' + message['content'] + '<｜tool▁output▁end｜>'}}{%- endif %}{%- endif %}{%- endfor -%}{% if ns.is_tool %}{{'<｜tool▁outputs▁end｜>'}}{% endif %}{% if add_generation_prompt and not ns.is_tool %}{{'<｜Assistant｜><think>\\n'}}{% endif %}",
+      "plan_sha256": "d5253d8b7281825b1c53f64ae11722fbb8de39e3587181a572cf50eb8fbae832",
+      "source_complete": true
+    }
+  },
+  "model_order": [
+    "small",
+    "large"
+  ],
+  "expected_records": 200,
+  "prompt_builder_source": "def prompt(spec: dict[str, Any], problem: dict[str, Any], condition: dict[str, Any]) -> str:\n    \"\"\"Compose one user message with condition-specific matched demonstrations.\n\n    All demonstration variants share questions, order and final answers. Target\n    reference answers never enter this function's rendered prompt.\n    \"\"\"\n    style = condition[\"demo_style\"]\n    examples = \"\"\n    if style is not None:\n        parts = [f\"Example {i+1}\\nProblem:\\n{d['question']}\\nSolution:\\n\"\n                 f\"{d['reasoning'][style]}\\nAnswer: {d['answer']}\"\n                 for i, d in enumerate(spec[\"demonstrations\"])]\n        examples = \"\\n\\nWorked examples:\\n\" + \"\\n\\n\".join(parts)\n    return (\"Solve the following mathematics problem.\\n\" + condition[\"instruction\"]\n            + \"\\nPut only the final answer on the last line, prefixed by 'Answer:'.\"\n            + examples + \"\\n\\nNow solve this problem only:\\n\" + problem[\"question\"])",
+  "demonstrations": {
+    "count": 8,
+    "canonical_sha256": "b6039cac36844807ea77d969789530ef1c159b153f6373809ba51770a0830029",
+    "encoding": "UTF-8 JSON; ensure_ascii=False; sort_keys=True; separators=(',', ':'); allow_nan=False",
+    "ids_in_order": [
+      "authored-demo-1",
+      "authored-demo-2",
+      "authored-demo-3",
+      "authored-demo-4",
+      "authored-demo-5",
+      "authored-demo-6",
+      "authored-demo-7",
+      "authored-demo-8"
+    ],
+    "content_in_this_projection": false,
+    "note": "Eight authored examples omitted here; a companion historical prompt-assets.json may supply them. Benchmark question and reference text remain omitted."
+  },
+  "generation_settings": {
+    "dtype": "float16",
+    "n": 1,
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": -1,
+    "max_tokens": 6000,
+    "stop": [],
+    "stop_token_ids": [],
+    "ignore_eos": false,
+    "skip_special_tokens": false,
+    "spaces_between_special_tokens": false,
+    "repetition_penalty": 1.0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "seed_derivation": "int(SHA256(canonical_JSON([20260920, problem_id, condition_id, sample_index]))[:8], 16) % 2**31"
+  },
+  "historical_combined_metadata": {
+    "models": {
+      "large": {
+        "complete": true,
+        "model_id": "l3lab/L1-Qwen-7B-Exact",
+        "revision": "faddca9f863ea15295cd6600d64593f26b8c5086",
+        "source_report": "/content/l1_format_calibration_v4/run-large/reports/report-20260920T142021730020Z.json",
+        "source_sha256": "0e4aea05e6e42d13732238216c23361fa761fbbdf6a939997f7bbf9ee372aaa0"
+      },
+      "small": {
+        "complete": true,
+        "model_id": "l3lab/L1-Qwen-1.5B-Exact",
+        "revision": "b1fa57f192f0b14bd033d0085faaa80cdc39694b",
+        "source_report": "/content/l1_format_calibration_v4/run-small/reports/report-20260920T141100079405Z.json",
+        "source_sha256": "8c9ab13cc7cc0955fb4dbd03e8f389d9c9b8cd3569f18143b3f5224f458e5c4a"
+      }
+    },
+    "note": "Accuracy bounds reflect unresolved answers, not confidence intervals.",
+    "protocol_sha256": "1d7696a85f6da5bc23335b101f22515b469f6a5ffcfeddfe95f5d6c449b3179a"
+  },
+  "interpretation": {
+    "role": "Development/calibration pilot; same five non-held-out questions in both experiments.",
+    "grading_policy": "conservative-literals-v1",
+    "grades": "Preserved archived automatic conservative-literal decisions, not regraded from raw responses.",
+    "style_proxies": "Numeric line and alphabetic-run proxies only; no human compliance decisions exist in these source reports.",
+    "bounds": "Unresolved-answer lower/upper bounds retain every collected generation in the denominator; not confidence intervals.",
+    "reproduction_scope": "CPU aggregation of frozen per-generation scalars; not inference, answer extraction, boundary extraction, style recomputation, or human adjudication."
+  }
+}

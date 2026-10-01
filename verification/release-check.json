@@ -1,0 +1,50 @@
+{
+  "checks": [
+    {
+      "expected_returncode": 0,
+      "name": "integrity",
+      "returncode": 0
+    },
+    {
+      "expected_returncode": 2,
+      "name": "pending-publication-metadata",
+      "returncode": 2
+    },
+    {
+      "expected_returncode": 0,
+      "name": "cli-help",
+      "returncode": 0
+    }
+  ],
+  "csv_files_exact": 6,
+  "date": "2026-10-01",
+  "execution_platform": "Windows",
+  "figure_png_files_exact": 5,
+  "isolated_reproduction": "Passed from an independent copy and working directory; no access to private original outputs required.",
+  "limitations": [
+    "No inference or regrading verification",
+    "Linux CI definition supplied but not executed locally",
+    "Authorship, licenses, third-party redistribution review and public links remain pending"
+  ],
+  "no_overwrite": "Existing run directory rejected before executing analysis; previous results preserved.",
+  "privacy_scope": "Distributed code, data, protocol, docs and manifests scanned for local usernames/absolute user paths and common credential token patterns; no matches. Question, response, token-ID, and reviewer-identity fields excluded from projection.",
+  "reference_runtime": {
+    "matplotlib": "3.9.2",
+    "numpy": "2.1.3",
+    "python": "3.11.4"
+  },
+  "scientific_json": "Exact match after only enumerated provenance exclusions",
+  "status": "passed",
+  "test_suites": [
+    {
+      "command": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "tests": 9
+    },
+    {
+      "command": "python -m unittest discover -s research_tools -p test_length_overlap.py -v",
+      "status": "passed",
+      "tests": 4
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "audit_sha256": "048499131a7c0b400d18cf56a05bc1aaba9076844e8a015d328aded5b39aea81",
+  "builder_sha256": "4eea3fb85be5374c0451b387df14d07f0e4a08cd0f3a9f0546f5191597be2be2",
+  "files": {
+    "length-distributions.pdf": "9b929c53f2de4cdbf2c9e01143a1748079ad5b686f3740770fb02f007efce157",
+    "length-distributions.png": "5b5c4c381431e3907b15e2c98c3191b734096768528992cd29b2d7c19743980f",
+    "length-ranges.pdf": "a1cad258cdba567f90011f724eda4ad105210943c0cca1002840c282c5786788",
+    "length-ranges.png": "d0b6b727fc92b4fb958c12a07169b434f0836f67eb9e1afb42b0497d018a76a7"
+  },
+  "input_sha256": "f9d3d77c7157f294e91c8c632fc00e3ee5743010b5a35d6d7058a4325284137c",
+  "layout": "8.1-inch canvas for manuscript-width rendering",
+  "statistical_changes": "None; frozen quantiles and original integer length observations"
+}

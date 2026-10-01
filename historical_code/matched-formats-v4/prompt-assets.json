@@ -1,0 +1,145 @@
+{
+  "conditions": [
+    {
+      "budget": null,
+      "demo_style": "cot",
+      "group": "format",
+      "id": "cot-8shot-v2",
+      "instruction": "Reason through the problem step by step using clear explanatory sentences before giving the answer."
+    },
+    {
+      "budget": null,
+      "demo_style": "concise",
+      "group": "format",
+      "id": "concise-8shot-v2",
+      "instruction": "Use no more than six necessary reasoning steps. Write one short step per line and omit all optional explanation."
+    },
+    {
+      "budget": null,
+      "demo_style": "cod",
+      "group": "format",
+      "id": "cod-8shot-v2",
+      "instruction": "Use a short draft. Write one atomic reasoning step per line, use at most five words per line, prefer equations and standard abbreviations, and do not write explanatory paragraphs."
+    },
+    {
+      "budget": null,
+      "demo_style": "sot",
+      "group": "format",
+      "id": "sot-8shot-v2",
+      "instruction": "Use exactly this compact symbolic-sketch structure: one GIVEN: line, one TARGET: line, one or more numbered step lines beginning S1:, S2:, and so on as needed, then one CHECK: line. Put one compact relation or operation on each line and do not write explanatory paragraphs."
+    },
+    {
+      "budget": null,
+      "demo_style": "symbolic",
+      "group": "format",
+      "id": "symbolic-8shot-v2",
+      "instruction": "Write the reasoning only with mathematical symbols, numbers, variables, equations, standard operators, and LaTeX commands. Do not use explanatory prose. The final answer may use the normal answer format."
+    }
+  ],
+  "demonstrations": [
+    {
+      "answer": "12",
+      "id": "authored-demo-1",
+      "question": "A shelf holds 7 books. Another 5 books are added. How many books are there?",
+      "reasoning": {
+        "cod": "Start: 7 books.\nAdd: 5 books.\nTotal: 7+5=12.",
+        "concise": "Add the books: 7+5=12.",
+        "cot": "Add the original seven books and the five added books. This gives 7+5=12.",
+        "sot": "GIVEN: b=7; a=5\nTARGET: T\nS1: T=b+a=12\nCHECK: 7+5=12",
+        "symbolic": "7+5=12"
+      }
+    },
+    {
+      "answer": "6",
+      "id": "authored-demo-2",
+      "question": "Solve 3x+2=20 for x.",
+      "reasoning": {
+        "cod": "Subtract 2: 3x=18.\nDivide 3: x=6.",
+        "concise": "3x=18, so x=6.",
+        "cot": "Subtract two from both sides to obtain 3x=18. Divide both sides by three to get x=6.",
+        "sot": "GIVEN: 3x+2=20\nTARGET: x\nS1: 3x=18\nS2: x=6\nCHECK: 3(6)+2=20",
+        "symbolic": "3x+2=20\\Rightarrow3x=18\\Rightarrow x=6"
+      }
+    },
+    {
+      "answer": "40",
+      "id": "authored-demo-3",
+      "question": "A rectangle has length 8 and width 5. Find its area.",
+      "reasoning": {
+        "cod": "Use A=lw.\nSubstitute: A=8(5).\nResult: A=40.",
+        "concise": "A=lw=8(5)=40.",
+        "cot": "A rectangle's area is its length multiplied by its width. Therefore A=8(5)=40.",
+        "sot": "GIVEN: l=8; w=5\nTARGET: A\nS1: A=lw\nS2: A=8(5)=40\nCHECK: 8(5)=40",
+        "symbolic": "A=lw=8\\cdot5=40"
+      }
+    },
+    {
+      "answer": "2/5",
+      "id": "authored-demo-4",
+      "question": "A bag contains 2 red balls and 3 blue balls. What is the probability of drawing a red ball uniformly?",
+      "reasoning": {
+        "cod": "Total: 2+3=5.\nRed: 2.\nProbability: 2/5.",
+        "concise": "There are 5 balls, so P(R)=2/5.",
+        "cot": "There are 2+3=5 balls in total and two are red. Thus the probability of red is 2/5.",
+        "sot": "GIVEN: r=2; b=3\nTARGET: P(R)\nS1: n=r+b=5\nS2: P(R)=r/n=2/5\nCHECK: 0<2/5<1",
+        "symbolic": "r=2; b=3; n=r+b=5; P(R)=r/n=2/5"
+      }
+    },
+    {
+      "answer": "16",
+      "id": "authored-demo-5",
+      "question": "An arithmetic sequence starts with 4 and has common difference 3. Find its fifth term.",
+      "reasoning": {
+        "cod": "Use a_n=a_1+(n-1)d.\nSubstitute: 4+4(3).\nResult: a_5=16.",
+        "concise": "a_5=4+4(3)=16.",
+        "cot": "The fifth term equals the first term plus four common differences. Hence a_5=4+4(3)=16.",
+        "sot": "GIVEN: a_1=4; d=3; n=5\nTARGET: a_5\nS1: a_n=a_1+(n-1)d\nS2: a_5=4+4(3)=16\nCHECK: 4,7,10,13,16",
+        "symbolic": "a_1=4; d=3; a_5=a_1+4d=4+12=16"
+      }
+    },
+    {
+      "answer": "10",
+      "id": "authored-demo-6",
+      "question": "A right triangle has legs 6 and 8. Find its hypotenuse.",
+      "reasoning": {
+        "cod": "Use c^2=a^2+b^2.\nCompute: c^2=36+64=100.\nPositive root: c=10.",
+        "concise": "c=\\sqrt{6^2+8^2}=10.",
+        "cot": "By the Pythagorean theorem, c^2=6^2+8^2=100. Since a length is positive, c=10.",
+        "sot": "GIVEN: a=6; b=8\nTARGET: c>0\nS1: c^2=a^2+b^2\nS2: c^2=36+64=100\nS3: c=10\nCHECK: 10^2=100",
+        "symbolic": "c>0; c^2=6^2+8^2=100\\Rightarrow c=10"
+      }
+    },
+    {
+      "answer": "15",
+      "id": "authored-demo-7",
+      "question": "How many unordered pairs can be chosen from 6 distinct objects?",
+      "reasoning": {
+        "cod": "Choose two from six.\nUse C(6,2).\nCompute: 6(5)/2=15.",
+        "concise": "\\binom{6}{2}=6(5)/2=15.",
+        "cot": "There are 6 times 5 ordered selections. Each unordered pair is counted twice, so the number is 6(5)/2=15.",
+        "sot": "GIVEN: n=6; k=2\nTARGET: C(n,k)\nS1: C(6,2)=6!/(2!4!)\nS2: C(6,2)=6(5)/2=15\nCHECK: 15",
+        "symbolic": "\\binom{6}{2}=\\frac{6!}{2!4!}=15"
+      }
+    },
+    {
+      "answer": "7",
+      "id": "authored-demo-8",
+      "question": "Find the positive real solution of x^2=49.",
+      "reasoning": {
+        "cod": "Roots: x=7,-7.\nRequire positive x.\nResult: x=7.",
+        "concise": "x^2=49 and x>0, so x=7.",
+        "cot": "The real square roots of 49 are 7 and -7. The requested positive solution is therefore x=7.",
+        "sot": "GIVEN: x^2=49; x>0\nTARGET: x\nS1: x=7 or x=-7\nS2: x>0 => x=7\nCHECK: 7^2=49",
+        "symbolic": "x^2=49; x\\in\\mathbb{R}_{>0}\\Rightarrow x=7"
+      }
+    }
+  ],
+  "experiment_id": "l1-two-models-n5-c5-s4-format-calibration-v4",
+  "notes": "Exact archived conditions and authored demonstrations; evaluation problem text and reference answers omitted. See probe.py prompt() for full message assembly. No literal-replication claim for external method papers.",
+  "prompt_provenance": {
+    "cod": "https://github.com/sileix/chain-of-draft",
+    "sot": "https://arxiv.org/html/2503.05179v4",
+    "status": "Controlled format-calibration adaptations, not exact paper replications. All conditions use eight authored examples with matched questions, mathematical content, order, and final answers; only reasoning presentation changes.",
+    "symbolic": "Operational replacement for the failed only-numbers condition"
+  }
+}

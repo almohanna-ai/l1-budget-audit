@@ -1,0 +1,11 @@
+﻿model,accuracy_pct,collected,condition,condition_group,correct,expected,hit_cap,incorrect,lower_bound_pct,mean_abs_budget_error,mean_signed_budget_error,mean_think_tokens,mean_total_tokens,median_think_tokens,median_total_tokens,requested_budget,think_p10,think_p90,unresolved,upper_bound_pct,valid_thinking_boundaries
+small,95.0,20,cot-8shot-v2,format,19,20,0,1,95.0,,,2304,2415.25,2440.5,2464.0,,1355.0,2872.7000000000003,0,95.0,20
+small,,20,concise-8shot-v2,format,17,20,0,2,85.0,,,2463.2,2633.1,2486.0,2627.5,,1889.0,2878.3,1,90.0,20
+small,,20,cod-8shot-v2,format,19,20,0,0,95.0,,,1175.25,1248.1,998.0,1034.5,,493.5,2244.7,1,100.0,20
+small,100.0,20,sot-8shot-v2,format,20,20,0,0,100.0,,,1949.45,2074.9,1872.5,1891.0,,1105.6,2787.6,0,100.0,20
+small,95.0,20,symbolic-8shot-v2,format,19,20,0,1,95.0,,,2388.1,2573.45,2639.0,2851.5,,1577.5,2822.1,0,95.0,20
+large,100.0,20,cot-8shot-v2,format,20,20,0,0,100.0,,,647.1,689.1,624.0,657.5,,447.4,957.5000000000001,0,100.0,20
+large,100.0,20,concise-8shot-v2,format,20,20,0,0,100.0,,,461.85,499,427.5,478.5,,302.4,681.6,0,100.0,20
+large,100.0,20,cod-8shot-v2,format,20,20,0,0,100.0,,,438.9,477.75,400.5,447.0,,312.3,643.8000000000001,0,100.0,20
+large,100.0,20,sot-8shot-v2,format,20,20,0,0,100.0,,,544.35,601.15,521.0,579.0,,374.3,812.9000000000002,0,100.0,20
+large,100.0,20,symbolic-8shot-v2,format,20,20,0,0,100.0,,,548.55,604.1,524.0,567.0,,393.8,818.0,0,100.0,20

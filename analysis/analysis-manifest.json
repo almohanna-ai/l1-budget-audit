@@ -1,0 +1,10 @@
+{
+  "files": {
+    "accuracy-by-difficulty.csv": "aff17c641d6f8fe9aa08898a70de71a27d22ab82adb227328e07f06b23ef74a0",
+    "accuracy-by-subject.csv": "d827a94a8499eeab9d7719c6a13f5c80f98e1b0d3b80c38d08f51d9bf6f6e2a8",
+    "budget-summary.csv": "3353ec2efa6a5a0078ecc9fe970170d5ec68f0735ab4e947721c03de0aaeaede",
+    "paired-contrasts.csv": "0d9c580c597424e8e3bfbe83769f7b76131b432cf6bae7a24a596fccaef079ab",
+    "publication-analysis.json": "37c9848606ba10d8d32bacd46bf3ce1e5c82d80be80a1056bb5beafeca8a6748"
+  },
+  "immutable_output_policy": "Exclusive file creation; reruns require a new version directory"
+}

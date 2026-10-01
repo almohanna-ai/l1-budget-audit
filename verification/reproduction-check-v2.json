@@ -1,0 +1,100 @@
+{
+  "accuracy_pct": {
+    "1024": 77.0375,
+    "2048": 80.2375,
+    "3600": 83.025,
+    "512": 69.1625
+  },
+  "bootstrap_draw_matrix_sha256": "9b1bd421a40e504d022038166c224f803bf2e1767141920e3d4eb00e7bf0b0ab",
+  "checks": {
+    "five_figures_in_two_formats": true,
+    "main_scientific_json_equal": true,
+    "overlap_scientific_json_equal": true,
+    "two_model_pilot_reproduction": true
+  },
+  "comparison_policy": {
+    "csv": "Exact byte hashes",
+    "figures": "Existence checks; rendering bytes can differ across platforms",
+    "json": "Exact equality of scientific fields; no numeric tolerance or changed label exceptions",
+    "main_provenance_exclusions": [
+      "builder",
+      "builder_sha256",
+      "input_hashes",
+      "matplotlib",
+      "numpy",
+      "python"
+    ],
+    "overlap_metadata_exclusions": [
+      "builder_sha256",
+      "matplotlib",
+      "numpy",
+      "python"
+    ]
+  },
+  "csv_checks": {
+    "length-overlap/length-summary.csv": true,
+    "length-overlap/same-question-comparisons.csv": true,
+    "main/analysis/accuracy-by-difficulty.csv": true,
+    "main/analysis/accuracy-by-subject.csv": true,
+    "main/analysis/budget-summary.csv": true,
+    "main/analysis/paired-contrasts.csv": true
+  },
+  "pilot_validation": {
+    "accuracy_bounds": "Unresolved-answer bounds; not confidence intervals. All collected records remain in the denominator.",
+    "experiments": {
+      "comprehensive_v3_two_models": {
+        "complete_json_equal": true,
+        "complete_unique_grid": true,
+        "csv_equal": true,
+        "model_counts": {
+          "large": 260,
+          "small": 260
+        },
+        "per_problem_equal": true,
+        "per_problem_row_count": 130,
+        "record_count": 520,
+        "status": "passed",
+        "summary_json_bytes_equal": true,
+        "summary_row_count": 26,
+        "summary_rows_equal": true,
+        "unresolved_counts": {
+          "large": 1,
+          "small": 2
+        }
+      },
+      "matched_v4_two_models": {
+        "complete_json_equal": true,
+        "complete_unique_grid": true,
+        "csv_equal": true,
+        "model_counts": {
+          "large": 100,
+          "small": 100
+        },
+        "per_problem_equal": true,
+        "per_problem_row_count": 50,
+        "record_count": 200,
+        "status": "passed",
+        "summary_json_bytes_equal": true,
+        "summary_row_count": 10,
+        "summary_rows_equal": true,
+        "unresolved_counts": {
+          "large": 0,
+          "small": 2
+        }
+      }
+    },
+    "gpu_used": false,
+    "human_compliance": "No human decisions created; retained automated style proxies are not verdicts.",
+    "record_count": 720,
+    "scope": "Reaggregates frozen scalar lengths and archived automatic grades; does not rerun inference or raw-output grading.",
+    "status": "passed"
+  },
+  "problems": 500,
+  "records": 32000,
+  "runtime": {
+    "matplotlib": "3.9.2",
+    "numpy": "2.1.3",
+    "python": "3.11.4"
+  },
+  "status": "passed"
+}

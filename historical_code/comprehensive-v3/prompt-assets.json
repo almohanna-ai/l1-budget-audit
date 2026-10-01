@@ -1,0 +1,185 @@
+{
+  "conditions": [
+    {
+      "budget": 256,
+      "demo_style": null,
+      "group": "budget",
+      "id": "l1-budget-256",
+      "instruction": "Think for 256 tokens."
+    },
+    {
+      "budget": 512,
+      "demo_style": null,
+      "group": "budget",
+      "id": "l1-budget-512",
+      "instruction": "Think for 512 tokens."
+    },
+    {
+      "budget": 1024,
+      "demo_style": null,
+      "group": "budget",
+      "id": "l1-budget-1024",
+      "instruction": "Think for 1024 tokens."
+    },
+    {
+      "budget": 2048,
+      "demo_style": null,
+      "group": "budget",
+      "id": "l1-budget-2048",
+      "instruction": "Think for 2048 tokens."
+    },
+    {
+      "budget": 3600,
+      "demo_style": null,
+      "group": "budget",
+      "id": "l1-budget-3600",
+      "instruction": "Think for 3600 tokens."
+    },
+    {
+      "budget": null,
+      "demo_style": null,
+      "group": "format",
+      "id": "cot-zero-shot",
+      "instruction": "Reason through the problem step by step before giving the answer."
+    },
+    {
+      "budget": null,
+      "demo_style": "cot",
+      "group": "format",
+      "id": "cot-8shot",
+      "instruction": "Reason through the problem step by step before giving the answer."
+    },
+    {
+      "budget": null,
+      "demo_style": null,
+      "group": "format",
+      "id": "be-concise-zero-shot",
+      "instruction": "Reason through the problem concisely. Keep your reasoning brief and omit unnecessary explanation."
+    },
+    {
+      "budget": null,
+      "demo_style": null,
+      "group": "format",
+      "id": "only-numbers-zero-shot",
+      "instruction": "Work through the problem using numbers, equations and mathematical symbols rather than explanatory sentences. Apply this style throughout your reasoning, not just in the final response."
+    },
+    {
+      "budget": null,
+      "demo_style": null,
+      "group": "format",
+      "id": "no-proper-grammar-zero-shot",
+      "instruction": "Work through the problem without using proper grammar. Use abbreviated words and sentence fragments instead of full grammatical sentences throughout your reasoning."
+    },
+    {
+      "budget": null,
+      "demo_style": null,
+      "group": "format",
+      "id": "no-cot-zero-shot",
+      "instruction": "Give only the final answer. Do not provide reasoning steps or explanations."
+    },
+    {
+      "budget": null,
+      "demo_style": "cod",
+      "group": "format",
+      "id": "cod-style-8shot",
+      "instruction": "Use a short draft to work through the problem. Write each reasoning step on its own line, using at most five words per step. Apply this style throughout your reasoning, not just in the final response."
+    },
+    {
+      "budget": null,
+      "demo_style": "sot",
+      "group": "format",
+      "id": "sot-chunked-symbolism-8shot",
+      "instruction": "Organize your reasoning as a compact symbolic sketch. Define relevant variables, group related quantities, and connect equations or symbolic transformations into a clear logical sequence. Minimize prose. Apply this style throughout your reasoning, not just in the final response."
+    }
+  ],
+  "demonstrations": [
+    {
+      "answer": "12",
+      "id": "authored-demo-1",
+      "question": "A shelf holds 7 books. Another 5 books are added. How many books are there?",
+      "reasoning": {
+        "cod": "Original: 7 books.\nAdded: 5 books.\nTotal: 7+5=12.",
+        "cot": "Add the original seven books and the five added books: 7+5=12.",
+        "sot": "b=7; a=5\nT=b+a=12"
+      }
+    },
+    {
+      "answer": "6",
+      "id": "authored-demo-2",
+      "question": "Solve 3x+2=20 for x.",
+      "reasoning": {
+        "cod": "Subtract 2: 3x=18.\nDivide by 3: x=6.",
+        "cot": "Subtract two from both sides to obtain 3x=18. Divide both sides by three: x=6.",
+        "sot": "3x+2=20\n3x=20-2=18\nx=18/3=6"
+      }
+    },
+    {
+      "answer": "40",
+      "id": "authored-demo-3",
+      "question": "A rectangle has length 8 and width 5. Find its area.",
+      "reasoning": {
+        "cod": "Area = length times width.\n8 times 5 = 40.",
+        "cot": "A rectangle's area is length times width. Multiplying gives 8 times 5 equals 40.",
+        "sot": "l=8; w=5\nA=lw=8(5)=40"
+      }
+    },
+    {
+      "answer": "2/5",
+      "id": "authored-demo-4",
+      "question": "A bag contains 2 red balls and 3 blue balls. What is the probability of drawing a red ball uniformly?",
+      "reasoning": {
+        "cod": "Total balls: 2+3=5.\nRed balls: 2.\nProbability: 2/5.",
+        "cot": "There are 2+3=5 balls in total and two are red. The probability is 2/5.",
+        "sot": "r=2; b=3; n=r+b=5\nP(R)=r/n=2/5"
+      }
+    },
+    {
+      "answer": "16",
+      "id": "authored-demo-5",
+      "question": "An arithmetic sequence starts with 4 and has common difference 3. Find its fifth term.",
+      "reasoning": {
+        "cod": "Four increments after first.\nFifth term: 4+4(3)=16.",
+        "cot": "The fifth term is the first term plus four common differences. Thus 4+4(3)=16.",
+        "sot": "a_1=4; d=3; n=5\na_n=a_1+(n-1)d\na_5=4+4(3)=16"
+      }
+    },
+    {
+      "answer": "10",
+      "id": "authored-demo-6",
+      "question": "A right triangle has legs 6 and 8. Find its hypotenuse.",
+      "reasoning": {
+        "cod": "Pythagoras: c^2=6^2+8^2.\nc^2=36+64=100.\nPositive root: c=10.",
+        "cot": "By the Pythagorean theorem the hypotenuse squared is 6^2+8^2=36+64=100. Its positive square root is 10.",
+        "sot": "a=6; b=8\nc^2=a^2+b^2=36+64=100\nc>0 => c=10"
+      }
+    },
+    {
+      "answer": "15",
+      "id": "authored-demo-7",
+      "question": "How many unordered pairs can be chosen from 6 distinct objects?",
+      "reasoning": {
+        "cod": "Ordered choices: 6(5)=30.\nEach pair counted twice.\nUnordered pairs: 30/2=15.",
+        "cot": "There are 6 times 5 ordered choices. Each unordered pair appears twice, so the count is 6(5)/2=15.",
+        "sot": "n=6; k=2\nC(6,2)=6(5)/(2(1))=15"
+      }
+    },
+    {
+      "answer": "7",
+      "id": "authored-demo-8",
+      "question": "Find the positive real solution of x^2=49.",
+      "reasoning": {
+        "cod": "Roots: 7 and -7.\nPositive solution: 7.",
+        "cot": "The square roots of 49 are 7 and -7. The problem requires the positive solution, so x=7.",
+        "sot": "x^2=49 => x=+7 or x=-7\nx>0 => x=7"
+      }
+    }
+  ],
+  "experiment_id": "l1-two-models-n5-c13-s4-v3",
+  "notes": "Exact archived conditions and authored demonstrations; evaluation problem text and reference answers omitted. See probe.py prompt() for full message assembly. No literal-replication claim for external method papers.",
+  "prompt_provenance": {
+    "cod": "https://github.com/sileix/chain-of-draft",
+    "only_numbers": "https://arxiv.org/html/2503.01141v2",
+    "sot": "https://arxiv.org/html/2503.05179v4",
+    "status": "Controlled pilot adaptations, not exact paper replication. Eight authored matched examples in CoT/CoD/SoT; other conditions have none."
+  }
+}

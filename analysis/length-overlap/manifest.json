@@ -1,0 +1,14 @@
+{
+  "builder_sha256": "60e42e199a0831d64384a5acdec27d1510c3efa34b4f96fa8e9d3a29405acda7",
+  "files": {
+    "length-distributions.pdf": "3e86502adebc17b89a8cfb333804e26f646b1316052ff07c6123f14129d31391",
+    "length-distributions.png": "2196c1bc50b42123d21205361ec7a456c3e88c4f418584a95b748e2baa237b2d",
+    "length-ranges.pdf": "9d4146b2e1907de131b8b2325648d525dc82898f982e1bfab1b38430be6d3c08",
+    "length-ranges.png": "87d5b2875378b480b679f74492f493c3b728bc53ee4568d60312817be0c5a0c8",
+    "length-summary.csv": "ad77371f0af28b90c3a6b2842672fd994e9b87ce024991f1368b1011bd917aaa",
+    "overlap-analysis.json": "048499131a7c0b400d18cf56a05bc1aaba9076844e8a015d328aded5b39aea81",
+    "same-question-comparisons.csv": "d5e5573a3181e97499dff8e69fc703c356193b44b710c1303a98851f99eaa234"
+  },
+  "immutable_output_policy": "Exclusive creation in a new directory",
+  "input_sha256": "f9d3d77c7157f294e91c8c632fc00e3ee5743010b5a35d6d7058a4325284137c"
+}

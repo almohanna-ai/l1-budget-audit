@@ -1,0 +1,14 @@
+{
+  "title": "L1 Budget Audit: Analysis Artifacts",
+  "version": "0.2.0-rc1",
+  "prepared_date": "2026-10-01",
+  "status": "local_release_candidate",
+  "authors": [],
+  "code_license": null,
+  "data_license": null,
+  "third_party_rights_reviewed": false,
+  "repository_url": null,
+  "archive_doi": null,
+  "manuscript_url": null,
+  "scope": "CPU reproduction of final accepted 32000-generation main campaign, length overlap, and two completed exploratory two-model pilots (520 and 200 observations). Original pilot code and prompt assets are preserved; this bundle does not rerun inference or regrade responses."
+}
