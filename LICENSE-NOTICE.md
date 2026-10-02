@@ -1,18 +1,23 @@
-# License status of this candidate
+# Reuse and attribution
 
-No code or data reuse license has yet been selected or granted by the authors
-through this package. This notice is **not** an open-source or open-data license.
-Author identity and rights-holder approval remain pending. Do not represent
-this candidate as openly licensed.
+Copyright (c) 2026 SALAM ALMOHANNA for the original material in this release.
 
-Before public release, the rights holders should choose the code and data
-licenses separately, supply the appropriate license text and attribution, and
-record the choices in `release-metadata.json`. Apply any new license only to
-material they have authority to license. Third-party material retains its own
-terms; see `THIRD-PARTY-NOTICES.md`.
+Original software and source code in this repository are licensed under the
+[MIT License](LICENSE). Original research data, numerical results, figures,
+and documentation are licensed under
+[Creative Commons Attribution 4.0 International](LICENSE-DATA.md).
+These permissions include reuse, modification, redistribution, and commercial
+use, subject to the applicable license terms.
 
-This package grants no rights in model weights, benchmark question/answer text,
-upstream tokenizer templates, dependency libraries, or other third-party works.
-Most of those materials are not redistributed here. The archived tokenizer chat
-template within the historical protocol requires its upstream notices and
-redistribution terms to be checked before public release.
+**Scholarly citation request:** If you use this package or its results in a
+research publication, please cite the accompanying manuscript using
+[CITATION.cff](CITATION.cff). The manuscript is currently unpublished and has
+no DOI; update the citation when a stable manuscript identifier becomes
+available. This citation request is a scholarly norm, **not an additional
+condition of the MIT license**. CC BY 4.0 independently requires appropriate
+attribution for licensed data, figures, and documentation; see its terms.
+
+These licenses cover only original material over which the author has rights.
+They do not relicense model weights, benchmark problem/answer text, the archived
+upstream tokenizer chat template, or separately installed dependencies. See
+[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) for sources and boundaries.

@@ -7,10 +7,12 @@ This expanded candidate also includes the two completed exploratory format
 calibrations on **both L1-Qwen-1.5B-Exact and L1-Qwen-7B-Exact** (520 and 200
 outputs), their analysis projections, frozen results, prompts, and original code.
 
-**Release candidate:** scientific results are frozen; author names and reuse
-licenses are awaiting owner confirmation. No public repository URL or DOI has
-been assigned. See [publication status](docs/publishing.md) and
-[rights notice](LICENSE-NOTICE.md) before publishing this candidate.
+**Release candidate:** scientific results are frozen. Original code is licensed
+MIT and original research data, figures, and documentation CC BY 4.0. The
+repository exists at [GitHub](https://github.com/Ghazi988/l1-budget-audit),
+but no public manuscript URL or DOI has been assigned. See
+[citation](CITATION.cff), [publication status](docs/publishing.md), and
+[rights notice](LICENSE-NOTICE.md).
 
 [التعليمات بالعربية](README_AR.md)
 
@@ -122,12 +124,15 @@ not bundled here; those are not runtime dependencies.
 
 ## Citation and reuse
 
-Use [release metadata](release-metadata.json) to track the current candidate.
-A final `CITATION.cff`, author-approved licenses, and live repository/archive
-links must be added before public release. The candidate deliberately provides
-no fabricated author names, open-source license, or DOI. Upstream references
-and third-party material are listed in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+Please cite the accompanying manuscript when using this package or its results
+in scholarly work; GitHub's **Cite this repository** button reads
+[CITATION.cff](CITATION.cff). The paper is presently unpublished, so the
+citation contains no invented DOI or venue. The request to cite the paper is
+separate from the legal [MIT code license](LICENSE); CC BY 4.0 requires
+appropriate attribution for original [data, figures, and docs](LICENSE-DATA.md).
+The licenses do not cover third-party works; see
+[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
 
 The manuscript is maintained separately and is not included in this code/data
-package. After the public links exist, add them to the manuscript's availability
-statement and cross-link the manuscript from this README.
+package. After a public manuscript link exists, add it to the manuscript's
+availability statement, this README, and `CITATION.cff` without inventing a DOI.

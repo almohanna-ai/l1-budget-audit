@@ -3,10 +3,13 @@
     ".gitattributes": "98cad2613b41d821c11c0fde01aae0643ae09984ffc55855dee0d9df37d4b58d",
     ".github/workflows/reproduce.yml": "dfb06e47287d2f8c2c889732571d1df689002404a170866ddfaa0a7f1f1e9064",
     ".gitignore": "92901c704e3ff34ba20703933fff8f945e0ab79600c3d2fbf5b6572d8cc3f0f6",
-    "LICENSE-NOTICE.md": "aba3742e6c1d563fda3a4d063c6012cf75f99dffebd58118173bb94fb5b85342",
-    "README.md": "155439e99c2082a2a56ffa8cea81d7bba8e608a56ec7040fcd0b40450203c230",
-    "README_AR.md": "3aef5987492c1b113c01f18c74075dc6412b809a35efafa460459fb6c6a1fc50",
-    "THIRD-PARTY-NOTICES.md": "88bc105577375a23a075dbbb5c98e9bbff70336bb5345c9cc3bef82e0b613cc5",
+    "CITATION.cff": "aa9b9a18426fbeea56c85284dff952b3577e8dfe6c82c2e8244e45b3a1d68946",
+    "LICENSE": "08178666c58ed189cae74542d382d66a04983cc22437b8e28e8c2ea8f7a457f3",
+    "LICENSE-DATA.md": "a70ebedd6f34c8652990c106f5793dd0263e839c57c5b4a2b67b4b9e93080d7c",
+    "LICENSE-NOTICE.md": "5a65bcf365c7c21ca79214b38ad4cf4cb87e83b55c67ed4be033568e7c1849d3",
+    "README.md": "dbdfcfc54387f58b64964ae2cd79ad97e49b7d2e4d5ec8d6a0187f53f949587a",
+    "README_AR.md": "66789c0435bc685c84b1e346216181054f9c5b1110716b211df807d09ae497a6",
+    "THIRD-PARTY-NOTICES.md": "3c694982989fa38296f760e418b19f465e05aab444fb22b8d9b208ee2c795e73",
     "analysis/accuracy-by-difficulty.csv": "aff17c641d6f8fe9aa08898a70de71a27d22ab82adb227328e07f06b23ef74a0",
     "analysis/accuracy-by-subject.csv": "d827a94a8499eeab9d7719c6a13f5c80f98e1b0d3b80c38d08f51d9bf6f6e2a8",
     "analysis/analysis-manifest.json": "2d3cc5c12140e9d05a968513ce49c5d32d9916b3c64f653fc21a44fec6b8d17d",
@@ -29,7 +32,7 @@
     "docs/format-pilots.md": "54304d32abcfe22afd428b312497e17feb3c4c138ed0b0936970e5c7cdb3bbd5",
     "docs/format-results.md": "be8b91c27608fdfc1133a5d7940c90cb329786d49054c0a41cd294412b26c72e",
     "docs/provenance.json": "36eed4852a3ef00ef11f58710f98abc7f3398cc68c8e40e74c017c11ca55359b",
-    "docs/publishing.md": "c391d50620b4c1ee1fe8bda8c3d4f61618ec79b118345fb4d1c9fc6612f763e9",
+    "docs/publishing.md": "f68e9667941d54f084adaa4f44a380a9bd8f64b3c254ac1ecfd10a69d30fd1e0",
     "docs/reproducibility.md": "c9969ab81301013dd1c97ea69816c466721973124c2d0c375ec698754dacfb74",
     "experiments/comprehensive_v3_two_models/frozen_summary.csv": "9f2f2fe3b871e13de4071728fbf9a96f7a7e701955270ed5382aa6356292da90",
     "experiments/comprehensive_v3_two_models/frozen_summary.json": "eb16ba8c40521d109827097ad20ed655d448658deb1cb1eb36845cdaddbbe87b",
@@ -74,7 +77,7 @@
     "historical_code/source-manifest.json": "9aa047d4caa6c0c137a794088684d8a248f02d98596d7691edbd7f956d7f07dd",
     "protocol/collect-config.json": "269d6a7a5b1b94934ed4a79198f2777ca8003a07bd9707e563af5747e1575814",
     "recompute_analysis.py": "f66303de479b41c2ba388f7d69c4de60f0f81dc582756e9d0f094463484a2860",
-    "release-metadata.json": "2feb9b6bd26b71673e3bcf57e3be18e7076a4f74eb0e68123e8efb8c01865c0a",
+    "release-metadata.json": "36708dca2d79174d1f78bd33097e75d023c5b389f1e83dd4c3f298cf097ab7cd",
     "reproduce.py": "78f97cc984639fbe8f9c4967272161aef1ff7d0f9534ec982ddcd28044b8af3a",
     "requirements.txt": "89ba85861ab444dd2abfbd94bd25473eaf39f7b00e77b39d71be94379a76705d",
     "research_tools/length_overlap.py": "325634e5a3d357a25c932c9594f9f9fd3d916f9bcc5ce8d702b573f865d27aee",
@@ -94,5 +97,5 @@
     "verify_release.py": "9a92a501296dae9d53796e5dd7eea4914e7e40d8ec5c91ac525018f9b3f81016"
   },
   "hash": "SHA256",
-  "version": "0.2.0-rc1"
+  "version": "0.3.0-rc1"
 }

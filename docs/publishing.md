@@ -1,16 +1,19 @@
 # Publication status and handoff
 
-This is a locally prepared and tested release candidate, not evidence that
-anything has been uploaded, assigned a DOI, or accepted by a repository.
+This is a locally prepared and tested successor to the package already uploaded
+to the GitHub repository. It is not evidence that this successor has been
+uploaded, assigned a DOI, or accepted by an archive or journal.
 
 ## Before making the repository public
 
-1. Supply the authors' preferred English names in order, affiliations, and an
-   optional contact address/ORCID. Fill `release-metadata.json` and create a
-   genuine `CITATION.cff` from those details.
-2. Approve code and data licenses and the included third-party attribution.
-   Add actual license texts; the current notice grants no license. Resolve the
-   archived tokenizer-template terms before publishing that protocol file.
+1. Confirm the author name and contact address in `release-metadata.json` and
+   `CITATION.cff`; add the affiliation/ORCID if desired.
+2. The author has approved broad reuse of original software under MIT and
+   original data, figures, and documentation under CC BY 4.0. The paper
+   citation is requested for scholarly use but is not an extra MIT condition.
+   Third-party material keeps its upstream terms. The 1.5B pinned model declares
+   MIT, the 7B model declares Apache-2.0, and no MATH-500 question/answer text
+   is redistributed. See `THIRD-PARTY-NOTICES.md`.
 3. Review the README and the limited scope: this package reproduces the final
    main analysis and two completed two-model pilots conditional on stored labels,
    not generation or regrading. Original pilot code and authored prompt assets
@@ -18,13 +21,13 @@ anything has been uploaded, assigned a DOI, or accepted by a repository.
 4. Rebuild the file manifest and checksums after any edits. Run file verification,
    unit tests, and numerical reproduction again if source/data have changed.
 
-`python verify_release.py --publication-ready` intentionally returns a nonzero
-status while names, licenses, or third-party review are incomplete. It is a
-metadata check, not a guarantee of platform acceptance or scientific review.
+`python verify_release.py --publication-ready` checks declared author and rights
+metadata. A passing status is not a legal opinion, proof of public upload, or
+scientific review.
 
 ## Intended release order
 
-Publish the approved repository contents on GitHub and make a versioned release.
+Upload this successor to the existing GitHub repository and make a versioned release.
 Optionally archive that exact code/data release on Zenodo as a software/data
 artifact and record the resulting real DOI. Add the live repository link and
 artifact DOI, if assigned, to the separately maintained manuscript. Submit the
