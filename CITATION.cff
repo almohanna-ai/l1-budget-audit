@@ -1,21 +1,27 @@
 cff-version: 1.2.0
 message: >-
   If you use this software or its research results, please cite the
-  accompanying manuscript. It is currently unpublished and has no DOI.
+  accompanying manuscript below.
 type: software
 title: "L1 Budget Audit: Analysis Artifacts"
-version: "0.3.0-rc1"
+version: "1.0.0"
+date-released: 2026-10-14
 authors:
-  - given-names: SALAM
-    family-names: ALMOHANNA
-    email: SALAM.ALMOHANNAA@STU.XJTU.EDU.CN
-repository-code: "https://github.com/Ghazi988/l1-budget-audit"
+  - given-names: Salam Mohammed Ghazi
+    family-names: Almohanna
+    email: salam.almohannaa@stu.xjtu.edu.cn
+    orcid: "https://orcid.org/0000-0002-6409-8874"
+    affiliation: "School of Software, Faculty of Electronic and Information Engineering, Xi'an Jiaotong University"
+repository-code: "https://github.com/almohanna-ai/l1-budget-audit"
 license: MIT
 preferred-citation:
-  type: unpublished
-  status: in-preparation
+  type: report
   title: "Requested Budgets, Realized Reasoning, and Answer Accuracy: An Empirical Audit of L1-Exact on MATH-500"
   authors:
-    - given-names: SALAM
-      family-names: ALMOHANNA
+    - given-names: Salam Mohammed Ghazi
+      family-names: Almohanna
+      orcid: "https://orcid.org/0000-0002-6409-8874"
   year: 2026
+  month: 10
+  doi: 10.5281/zenodo.23355265
+  url: "https://doi.org/10.5281/zenodo.23355265"

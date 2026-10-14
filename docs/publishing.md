@@ -1,8 +1,7 @@
 # Publication status and handoff
 
-This is a locally prepared and tested successor to the package already uploaded
-to the GitHub repository. It is not evidence that this successor has been
-uploaded, assigned a DOI, or accepted by an archive or journal.
+Version 1.0.0 (14 October 2026) is the public release. Repository: https://github.com/almohanna-ai/l1-budget-audit.
+Paper: https://doi.org/10.5281/zenodo.23355265. The checklist below documents how the release was prepared.
 
 ## Before making the repository public
 

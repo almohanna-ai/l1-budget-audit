@@ -7,12 +7,13 @@ This expanded candidate also includes the two completed exploratory format
 calibrations on **both L1-Qwen-1.5B-Exact and L1-Qwen-7B-Exact** (520 and 200
 outputs), their analysis projections, frozen results, prompts, and original code.
 
-**Release candidate:** scientific results are frozen. Original code is licensed
-MIT and original research data, figures, and documentation CC BY 4.0. The
-repository exists at [GitHub](https://github.com/Ghazi988/l1-budget-audit),
-but no public manuscript URL or DOI has been assigned. See
-[citation](CITATION.cff), [publication status](docs/publishing.md), and
-[rights notice](LICENSE-NOTICE.md).
+**Author:** Salam Mohammed Ghazi Almohanna ([ORCID 0000-0002-6409-8874](https://orcid.org/0000-0002-6409-8874)), School of Software,
+Xi'an Jiaotong University; Imam Al-Kadhim University College.
+
+**Paper:** *Requested Budgets, Realized Reasoning, and Answer Accuracy: An Empirical Audit of L1-Exact on MATH-500*, [doi:10.5281/zenodo.23355265](https://doi.org/10.5281/zenodo.23355265).
+Scientific results are frozen. Original code is licensed MIT and original research
+data, figures, and documentation CC BY 4.0. See [citation](CITATION.cff),
+[publication status](docs/publishing.md), and [rights notice](LICENSE-NOTICE.md).
 
 [التعليمات بالعربية](README_AR.md)
 
@@ -126,13 +127,11 @@ not bundled here; those are not runtime dependencies.
 
 Please cite the accompanying manuscript when using this package or its results
 in scholarly work; GitHub's **Cite this repository** button reads
-[CITATION.cff](CITATION.cff). The paper is presently unpublished, so the
-citation contains no invented DOI or venue. The request to cite the paper is
+[CITATION.cff](CITATION.cff). The paper is archived at [doi:10.5281/zenodo.23355265](https://doi.org/10.5281/zenodo.23355265). The request to cite the paper is
 separate from the legal [MIT code license](LICENSE); CC BY 4.0 requires
 appropriate attribution for original [data, figures, and docs](LICENSE-DATA.md).
 The licenses do not cover third-party works; see
 [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
 
-The manuscript is maintained separately and is not included in this code/data
-package. After a public manuscript link exists, add it to the manuscript's
-availability statement, this README, and `CITATION.cff` without inventing a DOI.
+The manuscript is archived separately on Zenodo (link above) and is not included
+in this code/data package.

@@ -1,14 +1,24 @@
 {
   "title": "L1 Budget Audit: Analysis Artifacts",
-  "version": "0.3.0-rc1",
-  "prepared_date": "2026-10-02",
-  "status": "local_release_candidate",
-  "authors": [{"name": "SALAM ALMOHANNA", "email": "SALAM.ALMOHANNAA@STU.XJTU.EDU.CN"}],
+  "version": "1.0.0",
+  "prepared_date": "2026-10-14",
+  "status": "public_release",
+  "authors": [
+    {
+      "name": "Salam Mohammed Ghazi Almohanna",
+      "email": "salam.almohannaa@stu.xjtu.edu.cn",
+      "orcid": "https://orcid.org/0000-0002-6409-8874",
+      "affiliations": [
+        "School of Software, Faculty of Electronic and Information Engineering, Xi'an Jiaotong University",
+        "Department of Computer Engineering Technologies, Imam Al-Kadhim University College"
+      ]
+    }
+  ],
   "code_license": "MIT",
   "data_license": "CC-BY-4.0",
   "third_party_rights_reviewed": true,
-  "repository_url": "https://github.com/Ghazi988/l1-budget-audit",
+  "repository_url": "https://github.com/almohanna-ai/l1-budget-audit",
   "archive_doi": null,
-  "manuscript_url": null,
+  "manuscript_url": "https://doi.org/10.5281/zenodo.23355265",
   "scope": "CPU reproduction of final accepted 32000-generation main campaign, length overlap, and two completed exploratory two-model pilots (520 and 200 observations). Original pilot code and prompt assets are preserved; this bundle does not rerun inference or regrade responses."
 }

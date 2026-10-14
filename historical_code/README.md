@@ -23,5 +23,5 @@ inference environment. They are not invoked by the CPU wrapper and are not
 advertised as ready to start a new GPU campaign from this ZIP alone. Their tests
 are also archived source; current release tests live in the root `tests/` folder.
 
-Prompt assets and code remain subject to the pending author/rights review in
+Prompt assets and code are released under the licenses described in
 `LICENSE-NOTICE.md`. This archive does not grant rights to third-party materials.

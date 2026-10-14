@@ -1,7 +1,7 @@
 # Upstream references and third-party material
 
 These links identify experiment inputs; they do not imply endorsement or
-transfer licensing rights. The archived 1.5B tokenizer template is attributed
+transfer licensing rights. Upstream licenses were re-checked on 14 October 2026. The archived 1.5B tokenizer template is attributed
 to its upstream repository, whose pinned release declares MIT. The 7B model
 repository declares Apache-2.0; no 7B weights or templates are distributed.
 The pinned MATH-500 card does not state a license. This release excludes the
